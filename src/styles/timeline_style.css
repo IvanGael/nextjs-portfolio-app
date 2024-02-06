@@ -1,0 +1,28 @@
+/* styles.css */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    border-left: 5px solid #3b82f6;
+    margin-bottom: 20px;
+    background-color: lightgray; 
+}
+
+.timeline-content {
+    margin-left: 20px;
+}
+
+/* Add responsive styling */
+@media (min-width: 768px) {
+    .timeline-container {
+        flex-direction: row;
+    }
+
+    .timeline-item {
+        width: 50%;
+    }
+}
