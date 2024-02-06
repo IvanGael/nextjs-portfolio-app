@@ -85,11 +85,12 @@ export function Services() {
               <Image
                 src={image}
                 alt={alt}
-                width={130}
+                width={150}
                 height={130}
                 quality={75}
                 sizes="100vw"
                 priority
+                style={{objectFit: 'contain'}}
               />
             </div>
             <h2 className="font-bold text-lg text-center">{title}</h2>

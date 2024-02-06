@@ -55,6 +55,7 @@ export function Hero() {
               sizes="100vw"
               priority
               className="shadow-2xl hover:animate-pulse rounded-lg w-96 h-96"
+              style={{objectFit: 'cover'}}
             />
           </div>
         </div>

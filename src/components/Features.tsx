@@ -149,6 +149,19 @@ const contents = [
     image: "/images/features/project4.png",
     order: true,
   },
+  {
+    title: "CashControl",
+    description:
+      "Une application mobile de gestion efficiente de budget et dépenses développé avec Flutter.",
+    features: [
+      "Création de compte et authentification",
+      "Définition de budget/Planification de dépenses",
+      "Statistiques sur le budget et les dépenses",
+      "Notifications"
+    ],
+    image: "/images/features/project8.png",
+    order: true,
+  },
 ];
 
 export function Features() {
