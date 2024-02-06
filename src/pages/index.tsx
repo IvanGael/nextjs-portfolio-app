@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Contact from "../components/Contact";
 import { Hero } from "../components/Hero";
 import Layout from "../components/Layout";
@@ -9,14 +10,21 @@ import Customers from "../components/Customers";
 import ProfExperiences from '../components/profExperiences';
 import Formation from '../components/Formation';
 
+import { useTheme } from 'next-themes';
+
 export default function Home() {
+  const { setTheme } = useTheme();
+  useEffect(() => {
+    setTheme("light");
+  }, []);
+
   return (
     <Layout>
       <Hero />
       <Services />
       <Features />
-      <Formation/>
-      <ProfExperiences/>
+      <Formation />
+      <ProfExperiences />
       {/* <Pricing /> */}
       <Faq />
       <Contact />

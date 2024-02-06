@@ -134,7 +134,7 @@ export default function Navbar() {
                       GitHub
                     </button>
                   </Link>
-                  <ThemeSwitchButton />
+                  {/* <ThemeSwitchButton /> */}
                 </div>
 
                 <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
