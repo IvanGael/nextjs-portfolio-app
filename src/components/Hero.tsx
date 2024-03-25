@@ -23,7 +23,7 @@ export function Hero() {
             </h1>
             <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
               Salut! Je suis Ivan APEDO, jeune développeur d'applications web et mobile. Je suis passionné par l'univers
-              informatique, principalement l'environnement mobile et l'IOT(systèmes embarqués). Je réalise des projets mobiles
+              informatique, principalement le développement de solutions logicielles, l'IA et le Big Data. Je réalise des projets
               professionnels, personnels, ou encore pour une cause qui me tient à coeur; j'adore créer et voir un projet prendre forme.
             </p>
             {/* <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
