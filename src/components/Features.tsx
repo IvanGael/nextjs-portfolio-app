@@ -1,223 +1,232 @@
 import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/24/solid";
 import { AllColors } from "@/constants/allColors";
+import AnimatedGradientImageCard from "./AnimatedGradientImageCard";
 
-const contents = [
-  {
-    title: "MyShop",
-    description:
-      "Une petite application web ecommerce développé avec React, NodeJS et MongoDB",
-    features: [
-      "Création de compte et authentification",
-      "Ajout de produits au panier et achats de produits",
-    ],
-    image: "/images/features/project_web2.png",
-    order: false,
-  },
+interface ContentItem {
+  image: string;
+  title: string;
+  description: string;
+  features: string[];
+  liveLink: string;
+}
+
+const contents: ContentItem[] = [
+  // {
+  //   title: "MyShop",
+  //   description:
+  //     "A small ecommerce web application developed with React, NodeJS and MongoDB",
+  //   features: [
+  //     "Account creation and authentication",
+  //     "Adding products to the cart and purchasing products",
+  //   ],
+  //   image: "/images/features/project_web2.png",
+  // },
   {
     title: "MyBlog",
     description:
-      "Une petite application web de blog développé avec React et Firebase",
+      "A small blog web application developed with React and Firebase",
     features: [
-      "Création de compte et authentification",
-      "Faire des posts",
-      "Réagir à des posts d'autres utilisateurs",
+      "Account creation and authentication",
+      "Make posts",
+      "Reacting to other users' posts",
     ],
     image: "/images/features/project_web3.png",
-    order: false,
+    liveLink: ""
   },
   {
     title: "Resfood",
     description:
-      "Une application web de réservations de places pour restaurants avec géolocalisation des restaurants",
+      "A web application for restaurant reservations with geolocation of restaurants",
     features: [
       "Création de compte et authentification",
-      "Réservation de place/Confirmation de la réservation",
-      "Gélocalisation des restaurants sur une map",
+      "Place reservation/Booking confirmation",
+      "Location of restaurants on a map",
     ],
     image: "/images/features/project_web4.png",
-    order: false,
+    liveLink: ""
   },
   {
     title: "TPI",
     description:
-      "Une plateforme de délivrance rapide de documents judiciaires pour les tribunaux de première instance développé avec Angular, Spring boot et Postgresql.",
+      "A rapid delivery platform for court documents for trial courts developed with Angular, Spring boot and Postgresql.",
     features: [
-      "Création de compte et authentification",
-      "Création de demande d'actes",
-      "Gestion des demandes",
-      "Délivrance des actes",
+      "Account creation and authentication",
+      "Creation of request for documents delivery",
+      "Documents delivery request management",
+      "Delivery of documents",
     ],
     image: "/images/features/project_web1.png",
-    order: false,
+    liveLink: ""
   },
   {
     title: "Diag'Ec",
     description:
-      "Une plateforme d'évaluation du niveau des entreprises par rapport à l'économie circulaire développé avec NextJs et Firebase.",
+      "A web & mobile app for assessing the level of companies in relation to the circular economy developed with Flutter, NextJs and Firebase.",
     features: [
-      "Création de compte et authentification",
-      "Questionnaire/Calcul automatique de score",
-      "Réalisation de défis",
+      "Account creation and authentication",
+      "Questionnaire/Automatic score calculation",
+      "Completing challenges",
+      "Multilingual mode"
     ],
     image: "/images/features/project_web5.png",
-    order: false,
-  },
-  {
-    title: "Let's go biking",
-    description:
-      "Une application qui permet de minimiser les distances parcourues à pied en privilégiant l’usage du vélo développé avec Java swing et C# DotNet.",
-    features: [
-      "Recherche d'itinéraire en entrant le départ et la destination",
-      "Obtention des itinéraires",
-    ],
-    image: "/images/features/project_web6.png",
-    order: false,
+    liveLink: "https://diagec.esaip.org/"
   },
   {
     title: "Climatrack",
     description:
-      "Une petite application mobile qui permet d'obtenir des informations météorologiques développé avec React Native.",
+      "A small mobile application that allows you to obtain weather information developed with Flutter.",
     features: [
-      "Obtention des informations météorologiques d'une ville et les prévisions",
+      "Getting weather information for a city and forecasts",
     ],
     image: "/images/features/project6.png",
-    order: true,
-  },
-  {
-    title: "ChatZen",
-    description:
-      "Une petite application mobile développé avec React Native- en utilisant la clé API de ChatGpt.",
-    features: [
-      "Obtention des informations météorologiques d'une ville et les prévisions",
-    ],
-    image: "/images/features/project7.png",
-    order: true,
+    liveLink: ""
   },
   {
     title: "MyChat",
     description:
-      "Une petite application mobile de chat développé avec Kotlin.",
+      "A small mobile chat application developed with Flutter.",
     features: [
-      "Création de compte et authentification",
-      "Messagerie instantanée, discussions avec des amis",
+      "Account creation and authentication",
+      "Instant messaging, chatting with friends",
     ],
     image: "/images/features/project1.png",
-    order: true,
+    liveLink: ""
   },
   {
     title: "CurrencyConverter",
     description:
-      "Une petite application mobile de conversion de monnaie développé avec Kotlin.",
+      "A small mobile currency converter application developed with Flutter.",
     features: [
-      "Conversion de monnaies dans plusieurs devises",
+      "Converting currencies to multiple currencies",
     ],
     image: "/images/features/project5.png",
-    order: true,
+    liveLink: ""
   },
   {
     title: "WorldFeed",
     description:
-      "Une petite application mobile qui permet d'obtenir des news de différents pays du monde développé avec Kotlin.",
+      "A small mobile application that allows you to get news from different countries in the developed world with Flutter.",
     features: [
-      "Obtention de news",
-      "Ajouter les news aux favoris et partager les news sur les réseaux sociaux",
+      "Getting news",
+      "Add news to favorites and share news on social networks",
     ],
     image: "/images/features/project3.png",
-    order: true,
+    liveLink: ""
   },
   {
     title: "OrderEase",
     description:
-      "Une petite application mobile qui permet de gérer les commandes et les paiements des clients de votre business développé avec Flutter.",
+      "A small mobile application that allows you to manage orders and payments for customers of your business developed with Flutter.",
     features: [
-      "Création de compte et authentification",
-      "Ajout de produits au panier et paiement",
+      "Account creation and authentication",
+      "Adding products to cart and paying",
     ],
     image: "/images/features/project2.png",
-    order: true,
-  },
-  {
-    title: "Diag'Ec",
-    description:
-      "Une application mobile d'évaluation du niveau des entreprises par rapport à l'économie circulaire développé avec Flutter.",
-    features: [
-      "Création de compte et authentification",
-      "Questionnaire/Calcul automatique de score",
-      "Réalisation de défis",
-    ],
-    image: "/images/features/project4.png",
-    order: true,
+    liveLink: ""
   },
   {
     title: "CashControl",
     description:
-      "Une application mobile de gestion efficiente de budget et dépenses développé avec Flutter.",
+      "A mobile application for efficient budget and expense management developed with Flutter.",
     features: [
-      "Création de compte et authentification",
-      "Définition de budget/Planification de dépenses",
-      "Statistiques sur le budget et les dépenses",
+      "Account creation and authentication",
+      "Budget Setting/Expense Planning",
+      "Budget and expenditure statistics",
       "Notifications"
     ],
     image: "/images/features/project8.png",
-    order: true,
+    liveLink: ""
+  },
+  {
+    title: "Dice Game",
+    description:
+      "Playful dice game with fun animations and customization built with Flutter.",
+    features: [
+      "Dice rolling",
+      "Dice faces customization",
+      "Rules settings",
+    ],
+    image: "/images/features/project9.png",
+    liveLink: "https://ivangael.github.io/dice_game/"
+  },
+  {
+    title: "River cruise",
+    description:
+      "River cruise tours booking mobile app built with Flutter.",
+    features: [
+      "River cruise tours booking",
+    ],
+    image: "/images/features/project10.png",
+    liveLink: "https://ivangael.github.io/river_cruises_dribble-clone/"
+  },
+  {
+    title: "Websocket Chat",
+    description:
+      "A real-time chat app built with React with Go backend using WebSocket for handling communication",
+    features: [
+      "Realtime messaging",
+      "Connecting to room"
+    ],
+    image: "/images/features/project11.png",
+    liveLink: "https://chatyier.netlify.app/"
+  },
+  {
+    title: "Image Toolbox",
+    description:
+      "A web app that offers a variety of image processing features, including object detection, resizing, filtering, text extraction, compression, comparison, and pose detection",
+    features: [
+      "Image processing (OpenCV)",
+      "Object Detection & Segmentation(Yolov8)",
+      "Text extraction(Pytesseract)",
+      "Pose Detection(Tensorflow model)"
+    ],
+    image: "/images/features/project12.png",
+    liveLink: "https://image-toolbox.netlify.app/"
+  },
+  {
+    title: "Advanced Lane Detection",
+    description:
+      "An advanced lane detection system for improving vehicle safety using Python, OpenCV and Yolov8",
+    features: [
+      "Lane Detection",
+      "Vehicle detection",
+      "Direction detection",
+      "Pose Detection"
+    ],
+    image: "/images/features/project13.png",
+    liveLink: ""
+  },
+  {
+    title: "Social Distancing Monitoring",
+    description:
+      "Monitor social distancing between people, identify high-risk areas and non-compliance using Python, OpenCV and Yolov8",
+    features: [
+      "Person Detection",
+      "People closeness detection",
+      "People mapping on card"
+    ],
+    image: "/images/features/project14.png",
+    liveLink: ""
   },
 ];
 
 export function Features() {
   return (
-    <div className="bg-white dark:bg-neutral-900" id="projets">
+    <div className="bg-white dark:bg-neutral-900" id="projects">
       <div id="content">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16">
-        <h2 className="text-4xl font-bold text-center">Projets</h2>
-        <p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
+          <h2 className="text-4xl text-black dark:text-white font-bold text-center mb-8">Featured Projects</h2>
+          {/* <p className="pt-6 text-black max-w-2xl text-center m-auto dark:text-neutral-400">
           web & mobile
-        </p>
+        </p> */}
 
-        {contents.map((content) => (
-          <div
-            key={content.title}
-            className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-28 items-center"
-          >
-            <div
-              className={`pt-8 md:pt-16 ${content.order ? "order-1 md:order-2" : "order-1"
-                }`}
-            >
-              <h1 className="text-2xl font-bold">{content.title}</h1>
-              <p className="pt-6 pb-6 text-base dark:text-neutral-400">
-                {content.description}
-              </p>
-
-              <ul className="font-medium space-y-1 flex-1">
-                {content.features.map((feature) => (
-                  <li key={feature} className="leading-6 flex">
-                    <CheckIcon className={`mt-2 w-3 h-3 ${AllColors.mainTextColor} shrink-0`} />
-                    <span className="ml-3 dark:text-neutral-400">
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className={`order-1 pt-8 md:pt-16 ${content.order ? "ml-0 2xl:-ml-40" : "mr-0 2xl:-mr-40"
-                }`}
-            >
-              <div className="flex items-center">
-                <Image
-                  src={content.image}
-                  alt="Image description"
-                  width={1920}
-                  height={1080}
-                  quality={75}
-                  sizes="100vw"
-                  priority
-                />
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {contents.map((content, index) => (
+              <AnimatedGradientImageCard key={index} content={content} />
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
       </div>
     </div>
   );

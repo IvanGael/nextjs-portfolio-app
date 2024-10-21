@@ -18,12 +18,9 @@ function classNames(...classes: any) {
 export default function Navbar() {
 
   const navigation = [
-    { name: "Présentation", href: "/", current: true },
-    { name: "Compétences", href: "#competences", current: false },
-    { name: "Projets réalisés", href: "#projets", current: false },
-    { name: "Parcours académique", href: "#parcours", current: false },
-    { name: "Expériences", href: "#experiences", current: false },
-    { name: "Contact", href: "#contact", current: false },
+    { name: "Me", href: "/", current: true },
+    { name: "Skills", href: "#skills", current: false },
+    { name: "Works", href: "#works", current: false }
   ];
 
   const [navigationState, setNavigationState] = useState(navigation);
@@ -37,46 +34,6 @@ export default function Navbar() {
 
     setNavigationState(updatedArray);    
   };
-  
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     // Get the scroll position
-  //     const scrollY = window.scrollY;
-
-  //     // Define a threshold to determine when to update the navigation state
-  //     const threshold1 = 400; 
-  //     const threshold2 = 1200;
-  //     const threshold3 = 3200;
-  //     const threshold4 = 5200;
-  //     const threshold5 = 6200;
-
-  //     // Update the navigation state when the scroll position is beyond the threshold
-  //     if (scrollY > threshold1 && scrollY < threshold2 ) {
-  //       updateNavigationState("Compétences"); 
-  //     } else if (scrollY > threshold2 && scrollY < threshold3 ) {
-  //       updateNavigationState("Projets réalisés"); 
-  //     } else if (scrollY > threshold3 && scrollY < threshold4 ) {
-  //       updateNavigationState("Parcours académique"); 
-  //     } else if (scrollY > threshold4 && scrollY < threshold5 ) {
-  //       updateNavigationState("Expériences"); 
-  //     } else if (scrollY > threshold5) {
-  //       updateNavigationState("Contact"); 
-  //     }
-  //     else {
-  //       updateNavigationState('Présentation'); 
-  //     }
-  //   };
-
-  //   // Attach the event listener when the component mounts
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Remove the event listener when the component unmounts
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [updateNavigationState]); 
-
 
   return (
     <Disclosure
@@ -110,7 +67,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-neutral-900 border border-t-0 border-l-0 border-r-0 border-b-4 border-blue-500 dark:text-neutral-400 "
+                            ? `text-neutral-900 border border-t-0 border-l-0 border-r-0 border-b-4 ${AllColors.borderColor} dark:text-neutral-400 `
                             : "text-neutral-900 dark:text-neutral-400 hover:underline",
                           "text-base font-medium"
                         )}
@@ -134,7 +91,7 @@ export default function Navbar() {
                       GitHub
                     </button>
                   </Link>
-                  {/* <ThemeSwitchButton /> */}
+                  <ThemeSwitchButton />
                 </div>
 
                 <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">

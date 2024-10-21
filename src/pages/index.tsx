@@ -21,14 +21,14 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
-      <Services />
-      <Features />
-      <Formation />
-      <ProfExperiences />
-      {/* <Pricing /> */}
-      <Faq />
-      <Contact />
       <Customers />
+      {/* <Services /> */}
+      <Features />
+      {/* <Formation />
+      <ProfExperiences /> */}
+      {/* <Pricing /> */}
+      {/* <Faq /> */}
+      {/* <Contact /> */}
     </Layout>
   );
 }

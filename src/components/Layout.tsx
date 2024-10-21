@@ -9,9 +9,9 @@ const Layout = (props: any) => {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Portfolio - Ivan APEDO",
-    description: `Portfolio de Ivan APEDO, Développeur d'applications`,
-    image: "/images/pss.png",
+    title: "Portfolio Site - Ivan APEDO",
+    description: `Portfolio Site - Ivan APEDO, Software Engineer`,
+    image: "/images/favicon.jpg",
     type: "website",
     ...customMeta,
   };
@@ -21,7 +21,7 @@ const Layout = (props: any) => {
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
-        <link href="/pss.jpg" rel="icon" type="image/jpg" sizes="32x32"/>
+        <link href="/favicon.jpg" rel="icon" type="image/jpg" sizes="32x32"/>
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
