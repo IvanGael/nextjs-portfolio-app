@@ -1,5 +1,5 @@
 export const AllColors = {
-    mainBgColor : 'bg-indigo-500',
-    mainTextColor: 'text-indigo-500',
-    borderColor: 'border-indigo-500'
+    mainBgColor : 'bg-sky-500',
+    mainTextColor: 'text-sky-500',
+    borderColor: 'border-sky-500'
 }

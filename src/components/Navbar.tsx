@@ -18,9 +18,9 @@ function classNames(...classes: any) {
 export default function Navbar() {
 
   const navigation = [
-    { name: "Me", href: "/", current: true },
+    { name: "About", href: "/", current: true },
     { name: "Skills", href: "#skills", current: false },
-    { name: "Works", href: "#works", current: false }
+    { name: "Work", href: "#work", current: false }
   ];
 
   const [navigationState, setNavigationState] = useState(navigation);

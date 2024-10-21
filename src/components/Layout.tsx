@@ -9,8 +9,8 @@ const Layout = (props: any) => {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Portfolio Site - Ivan APEDO",
-    description: `Portfolio Site - Ivan APEDO, Software Engineer`,
+    title: "Ivan APEDO, Software Engineer",
+    description: `Portfolio - Ivan APEDO, Software Engineer`,
     image: "/images/favicon.jpg",
     type: "website",
     ...customMeta,

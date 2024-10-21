@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import { AllColors } from "../constants/allColors";
+
+// <Brightness7Icon /> : <Brightness4Icon />
 
 export default function ThemeSwitchButton() {
     const [mounted, setMounted] = useState(false);
@@ -27,7 +30,7 @@ export default function ThemeSwitchButton() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6 text-neutral-900 dark:text-amber-400">
+                    className={`w-6 h-6 text-neutral-900 dark:${AllColors.mainTextColor}`}>
 
                     {resolvedTheme === "dark" ? (
                         <path

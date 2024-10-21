@@ -213,7 +213,7 @@ const contents: ContentItem[] = [
 
 export function Features() {
   return (
-    <div className="bg-white dark:bg-neutral-900" id="projects">
+    <div className="bg-white dark:bg-neutral-900" id="work">
       <div id="content">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
           <h2 className="text-4xl text-black dark:text-white font-bold text-center mb-8">Featured Projects</h2>

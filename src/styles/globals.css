@@ -3,11 +3,23 @@
 @tailwind utilities;
 
 ::selection {
-    @apply bg-rose-500 text-white ;
+    @apply bg-sky-500 text-white ;
 }
 
-/* @layer utilities {
-    .bg-rose-500 {
-      background-color: #625df5;
-    }
-  } */
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Rubik';
+    /* font-style: normal;
+    font-weight: 400;
+    font-display: swap; */
+    src: url(/fonts/Rubik-Regular.ttf) format('truetype');
+  }
+}
+
+/* https://tailwindcss.com/docs/font-family */
