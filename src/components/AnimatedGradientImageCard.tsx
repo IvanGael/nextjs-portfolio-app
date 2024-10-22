@@ -46,7 +46,7 @@ const AnimatedGradientImageCard: React.FC<AnimatedGradientImageCardProps> = ({ c
                     <ul className="space-y-2">
                         {content.features.map((feature, index) => (
                             <li key={index} className="flex items-center">
-                                <CheckIcon className="w-5 h-5 text-green-500 mr-2" />
+                                <CheckIcon className="w-5 h-5 text-sky-500 mr-2" />
                                 <span className="text-black dark:text-neutral-400">{feature}</span>
                             </li>
                         ))}
