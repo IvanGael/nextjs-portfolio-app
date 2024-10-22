@@ -27,7 +27,7 @@ function LinkedInIcon(props : any) {
 
 const social = [
   // { name: "Facebook", href: "#", icon: <FacebookIcon className="h-5 w-5" /> },
-  { name: "Twitter", href: "https://x.com/IvanGal19", icon: <TwitterIcon className="h-5 w-5" /> },
+  { name: "Twitter", href: "https://www.linkedin.com/in/ivan-apedo/", icon: <TwitterIcon className="h-5 w-5" /> },
   // { name: "Instagram", href: "#", icon: <InstagramIcon className="h-5 w-5" /> },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-apedo/", icon: <LinkedInIcon className="h-5 w-5" /> },
 ]
