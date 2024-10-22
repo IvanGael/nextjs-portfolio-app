@@ -19,7 +19,7 @@ const AnimatedGradientImageCard: React.FC<AnimatedGradientImageCardProps> = ({ c
     return (
         <div className="relative group overflow-hidden rounded-lg">
             <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-sky-400 via-fuchsia-500 to-blue-500"
+                className="absolute inset-0 bg-gradient-to-r from-red-400 via-fuchsia-500 to-sky-500"
                 animate={{
                     backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                 }}

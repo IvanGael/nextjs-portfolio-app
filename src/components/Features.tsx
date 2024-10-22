@@ -22,32 +22,31 @@ const contents: ContentItem[] = [
   //   ],
   //   image: "/images/features/project_web2.png",
   // },
+  // {
+  //   title: "MyBlog",
+  //   description:
+  //     "A small blog web application developed with React and Firebase",
+  //   features: [
+  //     "Account creation and authentication",
+  //     "Make posts",
+  //     "Reacting to other users' posts",
+  //   ],
+  //   image: "/images/features/project_web3.png",
+  //   liveLink: ""
+  // },
   {
-    title: "MyBlog",
+    title: "Delivery Tacker Simulator",
     description:
-      "A small blog web application developed with React and Firebase",
+      "Delivery Tracker built with React, Leaflet, Socket.io and Material UI",
     features: [
-      "Account creation and authentication",
-      "Make posts",
-      "Reacting to other users' posts",
+      "Address set up",
+      "Delivery Simulation"
     ],
-    image: "/images/features/project_web3.png",
-    liveLink: ""
+    image: "/images/features/project18.png",
+    liveLink: "https://delivery-tracker-web.netlify.app/"
   },
   {
-    title: "Resfood",
-    description:
-      "A web application for restaurant reservations with geolocation of restaurants",
-    features: [
-      "Création de compte et authentification",
-      "Place reservation/Booking confirmation",
-      "Location of restaurants on a map",
-    ],
-    image: "/images/features/project_web4.png",
-    liveLink: ""
-  },
-  {
-    title: "TPI",
+    title: "Court Documents Delivery Platform",
     description:
       "A rapid delivery platform for court documents for trial courts developed with Angular, Spring boot and Postgresql.",
     features: [
@@ -209,6 +208,42 @@ const contents: ContentItem[] = [
     image: "/images/features/project14.png",
     liveLink: ""
   },
+  {
+    title: "Road traffic monitoring",
+    description:
+      "Realtime road traffic monitoring with analytics chart plotting using Python, OpenCV, matplotlib and Yolov8",
+    features: [
+      "Vehicle Detection & Tracking",
+      "Vehicle Counting",
+      "Division of the road into compartments"
+    ],
+    image: "/images/features/project15.png",
+    liveLink: ""
+  },
+  {
+    title: "Face and Object Detection with Gender Classification",
+    description:
+      "A real-time face and object detection with gender classification and virtual glasses overlay using Python, OpenCV, DeepFace, and Yolov5",
+    features: [
+      "Face detection",
+      "Gender classification",
+      "Virtual glasses overlay on detected faces",
+      "Object detection"
+    ],
+    image: "/images/features/project16.png",
+    liveLink: ""
+  },
+  {
+    title: "Dragon ball Universe App",
+    description:
+      "Dragon ball Universe App built with Flutter",
+    features: [
+      "Characters Infos",
+      "Planets Infos"
+    ],
+    image: "/images/features/project17.png",
+    liveLink: "https://ivangael.github.io/Db_Univ"
+  }
 ];
 
 export function Features() {

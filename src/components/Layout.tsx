@@ -9,7 +9,7 @@ const Layout = (props: any) => {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Ivan APEDO, Software Engineer",
+    title: "Ivan APEDO",
     description: `Portfolio - Ivan APEDO, Software Engineer`,
     image: "/images/favicon.jpg",
     type: "website",
@@ -23,10 +23,10 @@ const Layout = (props: any) => {
         <meta name="robots" content="follow, index" />
         <link href="/favicon.jpg" rel="icon" type="image/jpg" sizes="32x32"/>
         <meta content={meta.description} name="description" />
-        <meta
+        {/* <meta
           property="og:url"
           content={`https://halley.vercel.app${router.asPath}`}
-        />
+        /> */}
           <meta property="og:type" content="website" />
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
