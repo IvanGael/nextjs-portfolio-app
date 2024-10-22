@@ -5,7 +5,7 @@ import { AllColors } from "../constants/allColors";
 
 import ModalVideo from '../components/modal-video';
 
-import VideoThumb from '../../public/images/hero/hero-image3.jpeg'
+import VideoThumb from '../../public/images/hero/hero-image2.png'
 
 export function Hero() {
   return (
