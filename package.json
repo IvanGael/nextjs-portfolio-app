@@ -22,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.3",
     "sharp": "^0.33.2",
+    "typewriter-effect": "^2.21.0",
     "use-web3forms": "^1.2.1"
   },
   "devDependencies": {

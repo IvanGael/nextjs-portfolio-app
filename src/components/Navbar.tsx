@@ -70,7 +70,7 @@ export default function Navbar() {
                           item.current
                             ? `text-neutral-900 ${item.name === "Ivan APEDO" ? "" : "border border-t-0 border-l-0 border-r-0 border-b-4 border-primary"} dark:text-neutral-400 `
                             : "text-neutral-900 dark:text-neutral-400 hover:underline",
-                          `${item.name === "Ivan APEDO" ? " text-lg font-bold" : ""} text-base`
+                          `${item.name === "Ivan APEDO" ? " text-lg font-bold tracking-tighter" : ""} text-base`
                         )}
                         aria-current={item.current ? "page" : undefined}
                         style={{textDecoration: 'none'}}

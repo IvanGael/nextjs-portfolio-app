@@ -3,6 +3,7 @@ import Link from "next/link"
 import { AllColors } from "../constants/allColors"
 import ModalVideo from '../components/modal-video'
 import VideoThumb from '../../public/images/hero/hero-image2.png'
+import TypewriterEffect from "./TypewriterEffect"
 
 
 // export function Hero() {
@@ -77,15 +78,25 @@ import VideoThumb from '../../public/images/hero/hero-image2.png'
 
 export function Hero() {
   return (
-    <div className="bg-background ">
+    <div
+      className="dark:bg-[url('/images/hero/bg_hero2_dark.png')] bg-[url('/images/hero/bg_hero2.png')]"
+      style={{
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+        position: 'relative'
+      }}
+    >
       <div className="max-w-7xl mx-auto pt-20 container px-12 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-2 sm:justify-center items-center">
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <h1 className="text-2xl font-bold tracking-tighter ">
-              Hey! I'm Ivan
+            <h1 className="text-2xl font-bold tracking-tighter">
+              <TypewriterEffect
+                strings={['Hey !', '... ...', '... ...', " I'm Ivan"]}
+              />
             </h1>
             <p className="mt-4 text-muted-foreground max-w-[600px]">
-              Web/Mobile Developer and Computer Vision Engineer with experience building production ready applications, passionate about AI-based solutions and open-source projects, I can build your big next project.
+              Web/Mobile Developer and Computer Vision Engineer with experience building production ready applications, passionate about AI-based solutions and open-source projects. I can build your big next project.
             </p>
             <p className="mt-4 text-muted-foreground max-w-[600px]">
               Fluent in French and English, with basic Japanese skills. Available for remote, part-time work. I balance my professional life with personal growth, working weekdays 9-5.
