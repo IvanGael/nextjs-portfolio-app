@@ -109,18 +109,27 @@ export function Hero() {
           </div>
           <div className="flex justify-center md:justify-end">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
-              <Image
+              {/* <Image
                 src="/images/hero/hero-image5.png"
                 alt="Ivan APEDO"
                 fill
                 className="object-cover rounded-lg shadow-2xl hover:animate-pulse"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
+              /> */}
+              <ModalVideo
+                thumb={VideoThumb}
+                thumbWidth={768}
+                thumbHeight={432}
+                thumbAlt="Modal video thumbnail"
+                video="/videos/video.mp4"
+                videoWidth={1920}
+                videoHeight={1080}
               />
             </div>
           </div>
         </div>
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <ModalVideo
             thumb={VideoThumb}
             thumbWidth={768}
@@ -130,7 +139,7 @@ export function Hero() {
             videoWidth={1920}
             videoHeight={1080}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
