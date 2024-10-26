@@ -50,7 +50,7 @@ export default function Navbar() {
                   <Link href="/" className="text-lg font-bold tracking-tighter">
                     <Image
                       className="block h-8 w-auto object-cover rounded-full shadow-2xl hover:scale-125"
-                      src="/images/hero/ivv.jpg"
+                      src="/images/hero/ivv2.jpg"
                       alt="Ivan APEDO"
                       width={150}
                       height={150}

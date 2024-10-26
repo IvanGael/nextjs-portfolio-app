@@ -11,7 +11,7 @@ const Layout = (props: any) => {
   const meta = {
     title: "Ivan APEDO",
     description: `Portfolio - Ivan APEDO, Software Engineer`,
-    image: "/images/favicon.jpg",
+    image: "/images/favicon2.jpg",
     type: "website",
     ...customMeta,
   };
@@ -21,7 +21,7 @@ const Layout = (props: any) => {
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
-        <link href="/favicon.jpg" rel="icon" type="image/jpg" sizes="32x32"/>
+        <link href={meta.image} rel="icon" type="image/jpg" sizes="32x32"/>
         <meta content={meta.description} name="description" />
         {/* <meta
           property="og:url"
