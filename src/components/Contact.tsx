@@ -118,14 +118,14 @@ export default function Contact() {
                 <div className="mb-5">
                   <input
                     type="text"
-                    placeholder="Username"
+                    placeholder="Fullname"
                     autoComplete="false"
                     className={`w-full text-black px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900 focus:ring-4 ${errors.name
                       ? `border-primary focus:border-primary ring-rose-100 dark:ring-0`
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                       }`}
                     {...register("name", {
-                      required: "Username is required",
+                      required: "Fullname is required",
                       maxLength: 80,
                     })}
                   />

@@ -26,7 +26,7 @@ import VideoThumb from '../../public/images/hero/hero-image2.png'
 //             <p className="pt-6 text-black w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
 //               Fluent in French and English, with basic Japanese skills. Based in Nice, France, available for remote, part-time work. I balance my professional life with personal growth, working weekdays 9-5.
 //             </p>
-           
+
 //             <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
 //             <div>
 //               <Link href="https://read.cv/ivangael" target="_blank">
@@ -82,7 +82,7 @@ export function Hero() {
         <div className="grid gap-8 md:grid-cols-2 sm:justify-center items-center">
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h1 className="text-2xl font-bold tracking-tighter ">
-              Ivan APEDO
+              Hey! I'm Ivan
             </h1>
             <p className="mt-4 text-muted-foreground max-w-[600px]">
               Web/Mobile Developer and Computer Vision Engineer with experience building production ready applications, passionate about AI-based solutions and open-source projects, I can build your big next project.
@@ -96,7 +96,7 @@ export function Hero() {
                 target="_blank"
                 className="inline-flex items-center justify-center rounded-md bg-black dark:bg-white text-white dark:text-black h-10 px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Resume
+                📜Read.cv
               </Link>
               <Link
                 href="https://www.linkedin.com/in/ivan-apedo/"

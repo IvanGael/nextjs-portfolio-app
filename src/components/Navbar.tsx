@@ -18,7 +18,7 @@ function classNames(...classes: any) {
 export default function Navbar() {
 
   const navigation = [
-    { name: "About", href: "/", current: true },
+    { name: "Ivan APEDO", href: "/", current: true },
     { name: "Skills", href: "#skills", current: false },
     { name: "Work", href: "#work", current: false },
     { name: "Contact", href: "#contact", current: false }
@@ -49,7 +49,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center md:pl-0">
                   <Link href="/" className="text-lg font-bold tracking-tighter">
                     <Image
-                      className="block h-8 w-auto object-cover rounded-full shadow-2xl"
+                      className="block h-8 w-auto object-cover rounded-full shadow-2xl hover:scale-125"
                       src="/images/hero/ivv.jpg"
                       alt="Ivan APEDO"
                       width={150}
@@ -57,7 +57,6 @@ export default function Navbar() {
                       quality={75}
                       sizes="100vw"
                     />
-                    {/* Ivan APEDO */}
                   </Link>
                 </div>
 
@@ -69,9 +68,9 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? `text-neutral-900 border border-t-0 border-l-0 border-r-0 border-b-4 border-primary dark:text-neutral-400 `
+                            ? `text-neutral-900 ${item.name === "Ivan APEDO" ? "" : "border border-t-0 border-l-0 border-r-0 border-b-4 border-primary"} dark:text-neutral-400 `
                             : "text-neutral-900 dark:text-neutral-400 hover:underline",
-                          "text-base font-medium"
+                          `${item.name === "Ivan APEDO" ? " text-lg font-bold" : ""} text-base`
                         )}
                         aria-current={item.current ? "page" : undefined}
                         style={{textDecoration: 'none'}}
