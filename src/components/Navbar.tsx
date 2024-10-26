@@ -20,7 +20,8 @@ export default function Navbar() {
   const navigation = [
     { name: "About", href: "/", current: true },
     { name: "Skills", href: "#skills", current: false },
-    { name: "Work", href: "#work", current: false }
+    { name: "Work", href: "#work", current: false },
+    { name: "Contact", href: "#contact", current: false }
   ];
 
   const [navigationState, setNavigationState] = useState(navigation);
