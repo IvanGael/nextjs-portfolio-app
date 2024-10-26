@@ -251,7 +251,7 @@ export function Features() {
     <div className="bg-white dark:bg-neutral-900" id="work">
       <div id="content">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
-          <h2 className="text-4xl text-black dark:text-white font-bold text-center mb-8">Featured Projects</h2>
+          <h2 className="text-4xl text-black dark:text-white font-bold text-center mb-8">Most Recent Projects</h2>
           {/* <p className="pt-6 text-black max-w-2xl text-center m-auto dark:text-neutral-400">
           web & mobile
         </p> */}

@@ -92,7 +92,15 @@ export function Hero() {
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h1 className="text-2xl font-bold tracking-tighter">
               <TypewriterEffect
-                strings={['Hey !', '... ...', '... ...', " I'm Ivan"]}
+                strings={
+                  [
+                    "Do you need any digital product ?",
+                    "A Web App ?",
+                    "A Mobile App ?",
+                    "A Computer Vision Solution ?",
+                    "   Just hit the 'Hire Me' button below and let's talk about it!",
+                  ]
+                }
               />
             </h1>
             <p className="mt-4 text-muted-foreground max-w-[600px]">

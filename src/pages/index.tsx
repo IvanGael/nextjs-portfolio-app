@@ -15,7 +15,8 @@ import { useTheme } from 'next-themes';
 export default function Home() {
   const { setTheme } = useTheme();
   useEffect(() => {
-    setTheme("light");
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(prefersDark ? 'dark' : 'light');
   }, []);
 
   return (
