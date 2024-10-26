@@ -30,7 +30,7 @@ export default function ThemeSwitchButton() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className={`w-6 h-6 text-neutral-900 dark:${AllColors.mainTextColor}`}>
+                    className={`w-6 h-6 text-neutral-900 dark:text-primary`}>
 
                     {resolvedTheme === "dark" ? (
                         <path

@@ -28,7 +28,7 @@ export default function Home() {
       <ProfExperiences /> */}
       {/* <Pricing /> */}
       {/* <Faq /> */}
-      {/* <Contact /> */}
+      <Contact />
     </Layout>
   );
 }

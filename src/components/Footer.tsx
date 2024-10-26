@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="mt-6 flex gap-4">
               {social.map((item) => (
                 <Link key={item.name} href={item.href} target="_blank" rel="noopener noreferrer">
-                  <div className={`w-10 h-10 ${AllColors.mainBgColor} text-white hover:opacity-75 rounded-full flex items-center justify-center transition-opacity`}>
+                  <div className={`w-10 h-10 bg-primary text-white hover:opacity-75 rounded-full flex items-center justify-center transition-opacity`}>
                     {item.icon}
                   </div>
                 </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className={`hover:${AllColors.mainTextColor} transition-colors duration-200`}
+                    className={`hover:text-primary transition-colors duration-200`}
                   >
                     {item.name}
                   </Link>
@@ -77,7 +77,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/ivan-apedo/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`text-sm hover:${AllColors.mainTextColor} transition-colors duration-200`}
+            className={`text-sm hover:text-primary transition-colors duration-200`}
           >
             &copy; {new Date().getFullYear()} Ivan APEDO. All rights reserved.
           </Link>

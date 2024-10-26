@@ -81,36 +81,36 @@ export function Hero() {
       <div className="max-w-7xl mx-auto pt-20 container px-12 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-2 sm:justify-center items-center">
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-3xl lg:text-3xl">
-              Hey There! I'm Ivan APEDO
+            <h1 className="text-2xl font-bold tracking-tighter ">
+              Ivan APEDO
             </h1>
             <p className="mt-4 text-muted-foreground max-w-[600px]">
-              Web/Mobile Developer and Computer Vision Engineer, passionate about AI-based solutions and open-source projects. I build high-quality web and mobile apps, specializing in Computer Vision.
+              Web/Mobile Developer and Computer Vision Engineer with experience building production ready applications, passionate about AI-based solutions and open-source projects, I can build your big next project.
             </p>
             <p className="mt-4 text-muted-foreground max-w-[600px]">
-              Fluent in French and English, with basic Japanese skills. Based in Nice, France, available for remote, part-time work. I balance my professional life with personal growth, working weekdays 9-5.
+              Fluent in French and English, with basic Japanese skills. Available for remote, part-time work. I balance my professional life with personal growth, working weekdays 9-5.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
               <Link
                 href="https://read.cv/ivangael"
                 target="_blank"
-                className="inline-flex items-center justify-center rounded-md bg-black dark:bg-white text-white dark:text-black h-10 px-4 py-2 text-sm font-medium transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                className="inline-flex items-center justify-center rounded-md bg-black dark:bg-white text-white dark:text-black h-10 px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
                 Resume
               </Link>
               <Link
                 href="https://www.linkedin.com/in/ivan-apedo/"
                 target="_blank"
-                className={`inline-flex items-center justify-center rounded-md h-10 px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring ${AllColors.mainBgColor} text-white hover:opacity-90`}
+                className={`inline-flex items-center justify-center rounded-md h-10 px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-white hover:opacity-90 animate-bounce`}
               >
-                Get in touch!
+                Hire Me!
               </Link>
             </div>
           </div>
           <div className="flex justify-center md:justify-end">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
               <Image
-                src="/images/hero/ivv.jpg"
+                src="/images/hero/hero-image5.png"
                 alt="Ivan APEDO"
                 fill
                 className="object-cover rounded-lg shadow-2xl hover:animate-pulse"

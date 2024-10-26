@@ -15,8 +15,15 @@ module.exports = {
       fontFamily: {
         sans: ['Rubik', ...fontFamily.sans],
       },
+      colors: {
+        primary: '#01A7F3',
+        secondary: '#F62992',
+      },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      }
     },
-    
+
   },
   variants: {
     typography: ["light"],

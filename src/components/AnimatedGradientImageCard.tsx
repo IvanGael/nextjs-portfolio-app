@@ -31,7 +31,7 @@ const AnimatedGradientImageCard: React.FC<AnimatedGradientImageCardProps> = ({ c
         <React.Fragment>
             <div className="relative group overflow-hidden rounded-lg">
                 <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-indigo-400 via-fuchsia-500 to-sky-500"
+                    className="absolute inset-0 bg-gradient-to-r from-violet-400 via-secondary to-primary"
                     animate={{
                         backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                     }}
@@ -58,7 +58,7 @@ const AnimatedGradientImageCard: React.FC<AnimatedGradientImageCardProps> = ({ c
                         <ul className="space-y-2">
                             {content.features.map((feature, index) => (
                                 <li key={index} className="flex items-center">
-                                    <CheckIcon className="w-5 h-5 text-sky-500 mr-2" />
+                                    <CheckIcon className="w-5 h-5 text-primary mr-2" />
                                     <span className="text-black dark:text-neutral-400">{feature}</span>
                                 </li>
                             ))}

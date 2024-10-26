@@ -48,7 +48,7 @@ export default function Contact() {
         if (json.success) {
           setIsSuccess(true);
           // setMessage(json.message);
-          setMessage("E-mail envoyé avec succès!");
+          setMessage("Email sent successfully!");
           e.target.reset();
           reset();
         } else {
@@ -58,7 +58,7 @@ export default function Contact() {
       })
       .catch((error) => {
         setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
+        setMessage("Something went wrong!");
         console.log(error);
       });
   };
@@ -66,7 +66,7 @@ export default function Contact() {
     <div className="bg-gray-50 dark:bg-neutral-900" id="contact">
       <div id="content">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-          <h2 className="text-4xl font-bold">Contact</h2>
+          <h2 className="text-black dark:text-white text-4xl font-bold">Hire me as Developer 🛠️</h2>
 
           <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
             {/* Want to contact us? Choose an option below and well be happy to show
@@ -77,24 +77,24 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
           <div>
             {/* <h2 className="text-lg font-bold">Contact Halley</h2> */}
-            <p className="max-w-sm mt-4 mb-4 dark:text-neutral-400">
-              Vous voulez me parler de votre projet? Remplissez juste le formulaire pour qu'on en discute ou contacter moi directement par mail ou téléphone.
+            <p className="max-w-sm mt-4 mb-4 text-black dark:text-neutral-400">
+              This is just a first step. Just leave me a message here!
             </p>
 
-            <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
+            {/* <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
               <MapIcon className="w-4 h-4" />
               <span>Basé à Nice</span>
-            </div>
+            </div> */}
 
-            <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
+            {/* <div className="flex items-center mt-2 space-x-2 text-black dark:text-neutral-400">
               <EnvelopeIcon className="w-4 h-4" />
-              <a href="mailto:hello@halley.vercel.app">apedoivan@gmail.com</a>
-            </div>
+              <a href="mailto:apedoivan@gmail.com">apedoivan@gmail.com</a>
+            </div> */}
 
-            <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
+            {/* <div className="flex items-center mt-2 space-x-2 text-black dark:text-neutral-400">
               <PhoneIcon className="w-4 h-4" />
               <a href="tel:51931999999">+33 6 18 55 68 12</a>
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -118,19 +118,19 @@ export default function Contact() {
                 <div className="mb-5">
                   <input
                     type="text"
-                    placeholder="Nom complet"
+                    placeholder="Username"
                     autoComplete="false"
                     className={`w-full text-black px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900 focus:ring-4 ${errors.name
-                      ? `${AllColors.borderColor}-500 focus:${AllColors.borderColor}-500 ring-rose-100 dark:ring-0`
+                      ? `border-primary focus:border-primary ring-rose-100 dark:ring-0`
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                       }`}
                     {...register("name", {
-                      required: "Le nom complet est requis",
+                      required: "Username is required",
                       maxLength: 80,
                     })}
                   />
                   {errors.name && (
-                    <div className={`mt-1 ${AllColors.mainTextColor}`}>
+                    <div className={`mt-1 text-primary`}>
                       <small>{errors.name.message}</small>
                     </div>
                   )}
@@ -138,29 +138,29 @@ export default function Contact() {
 
                 <div className="mb-5">
                   <label htmlFor="email_address" className="sr-only">
-                    Adresse email
+                    E-mail address
                   </label>
                   <input
                     id="email_address"
                     // type="email"
-                    placeholder="Adresse email"
+                    placeholder="E-mail address"
                     // name="email"
                     autoComplete="false"
                     className={`w-full text-black px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900   focus:ring-4  ${errors.email
-                      ? `${AllColors.borderColor}-500 focus:${AllColors.borderColor}-500 ring-rose-100 dark:ring-0`
+                      ? `border-primary focus:border-primary ring-rose-100 dark:ring-0`
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                       }`}
                     {...register("email", {
                       // required: "Entrez votre email",
                       pattern: {
                         value: /^\S+@\S+$/i,
-                        message: "Veuillez entrer un email valide",
+                        message: "Please enter a valid email",
                       },
                     })}
                     type="hidden" value="apedoivan@gmail.com"
                   />
                   {errors.email && (
-                    <div className={`mt-1 ${AllColors.mainTextColor}`}>
+                    <div className={`mt-1 text-primary`}>
                       <small>{errors.email.message}</small>
                     </div>
                   )}
@@ -171,13 +171,13 @@ export default function Contact() {
                     // name="message"
                     placeholder="Message"
                     className={`w-full text-black px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white dark:placeholder:text-neutral-200 dark:bg-neutral-900   rounded-md outline-none  h-36 focus:ring-4  ${errors.message
-                      ? `${AllColors.borderColor}-500 focus:${AllColors.borderColor}-500 ring-rose-100 dark:ring-0`
+                      ? `border-primary focus:border-primary ring-rose-100 dark:ring-0`
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                       }`}
-                    {...register("message", { required: "Entrez votre message" })}
+                    {...register("message", { required: "The message is required" })}
                   />
                   {errors.message && (
-                    <div className={`mt-1 ${AllColors.mainTextColor}`}>
+                    <div className={`mt-1 text-primary`}>
                       <small>{errors.message.message}</small>
                     </div>
                   )}
@@ -209,7 +209,7 @@ export default function Contact() {
                       ></path>
                     </svg>
                   ) : (
-                    "Envoyer un message"
+                    "Send"
                   )}
                 </button>
               </form>
@@ -233,16 +233,16 @@ export default function Contact() {
                     />
                   </svg>
                   <h3 className="py-5 text-2xl font-medium text-green-500">
-                    Succès
+                    Success
                   </h3>
                   <p className="text-neutral-900 dark:text-neutral-300 md:px-4">
                     {Message}
                   </p>
                   <button
-                    className={`mt-6 py-2 px-4 ${AllColors.mainBgColor} rounded-full focus:outline-none text-neutral-100`}
+                    className={`mt-6 py-2 px-4 bg-primary rounded-full focus:outline-none text-neutral-100`}
                     onClick={() => reset()}
                   >
-                    Retour
+                    Back
                   </button>
                 </div>
               </>
@@ -254,7 +254,7 @@ export default function Contact() {
                   width="97"
                   height="97"
                   viewBox="0 0 97 97"
-                  className={`${AllColors.mainTextColor}`}
+                  className={`text-primary`}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -265,17 +265,17 @@ export default function Contact() {
                   />
                 </svg>
 
-                <h3 className={`py-5 text-2xl font-medium ${AllColors.mainTextColor}`}>
-                  Oups, quelque chose s'est mal passé !
+                <h3 className={`py-5 text-2xl font-medium text-primary`}>
+                  Oops, something went wrong!
                 </h3>
                 <p className="text-neutral-900 dark:text-neutral-300 md:px-4">
                   {Message}
                 </p>
                 <button
-                  className={`mt-6 py-2 px-4 ${AllColors.mainBgColor} rounded-full focus:outline-none text-neutral-100`}
+                  className={`mt-6 py-2 px-4 bg-primary rounded-full focus:outline-none text-neutral-100`}
                   onClick={() => reset()}
                 >
-                  Réessayer
+                  Try again
                 </button>
               </div>
             )}

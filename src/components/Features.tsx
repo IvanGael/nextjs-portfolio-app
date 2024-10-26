@@ -45,19 +45,19 @@ const contents: ContentItem[] = [
     image: "/images/features/project18.png",
     liveLink: "https://delivery-tracker-web.netlify.app/"
   },
-  {
-    title: "Court Documents Delivery Platform",
-    description:
-      "A rapid delivery platform for court documents for trial courts developed with Angular, Spring boot and Postgresql.",
-    features: [
-      "Account creation and authentication",
-      "Creation of request for documents delivery",
-      "Documents delivery request management",
-      "Delivery of documents",
-    ],
-    image: "/images/features/project_web1.png",
-    liveLink: ""
-  },
+  // {
+  //   title: "Court Documents Delivery Platform",
+  //   description:
+  //     "A rapid delivery platform for court documents for trial courts developed with Angular, Spring boot and Postgresql.",
+  //   features: [
+  //     "Account creation and authentication",
+  //     "Creation of request for documents delivery",
+  //     "Documents delivery request management",
+  //     "Delivery of documents",
+  //   ],
+  //   image: "/images/features/project_web1.png",
+  //   liveLink: ""
+  // },
   {
     title: "Diag'Ec",
     description:
@@ -81,17 +81,17 @@ const contents: ContentItem[] = [
     image: "/images/features/project6.png",
     liveLink: ""
   },
-  {
-    title: "MyChat",
-    description:
-      "A small mobile chat application developed with Flutter.",
-    features: [
-      "Account creation and authentication",
-      "Instant messaging, chatting with friends",
-    ],
-    image: "/images/features/project1.png",
-    liveLink: ""
-  },
+  // {
+  //   title: "MyChat",
+  //   description:
+  //     "A small mobile chat application developed with Flutter.",
+  //   features: [
+  //     "Account creation and authentication",
+  //     "Instant messaging, chatting with friends",
+  //   ],
+  //   image: "/images/features/project1.png",
+  //   liveLink: ""
+  // },
   {
     title: "CurrencyConverter",
     description:

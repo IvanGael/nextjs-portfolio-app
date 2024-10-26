@@ -45,19 +45,20 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 shadow-lg ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-center justify-start">
-                {/* <div className="flex flex-shrink-0 items-center md:pl-0">
-                  <Link href="/">
+                <div className="flex flex-shrink-0 items-center md:pl-0">
+                  <Link href="/" className="text-lg font-bold tracking-tighter">
                     <Image
-                      className="block h-8 w-auto"
-                      src="/images/logos/logo-rose.svg"
-                      alt="Logo Your Company"
+                      className="block h-8 w-auto object-cover rounded-full shadow-2xl"
+                      src="/images/hero/ivv.jpg"
+                      alt="Ivan APEDO"
                       width={150}
                       height={150}
                       quality={75}
                       sizes="100vw"
                     />
+                    {/* Ivan APEDO */}
                   </Link>
-                </div> */}
+                </div>
 
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-5 items-center">
@@ -67,7 +68,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? `text-neutral-900 border border-t-0 border-l-0 border-r-0 border-b-4 ${AllColors.borderColor} dark:text-neutral-400 `
+                            ? `text-neutral-900 border border-t-0 border-l-0 border-r-0 border-b-4 border-primary dark:text-neutral-400 `
                             : "text-neutral-900 dark:text-neutral-400 hover:underline",
                           "text-base font-medium"
                         )}
@@ -87,7 +88,7 @@ export default function Navbar() {
                     target="_blank"
                     className="hidden sm:block"
                   >
-                    <button className={`bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 px-4 p-2 text-base font-medium dark:hover:${AllColors.mainBgColor} hover:${AllColors.mainBgColor} hover:text-white dark:hover:text-black rounded-full`}>
+                    <button className={`bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 px-4 p-2 text-base font-medium rounded-full`}>
                       GitHub
                     </button>
                   </Link>
@@ -128,7 +129,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               ))}
               <Link href="https://github.com/IvanGael" target="_blank">
-                <button className={`mt-12 ${AllColors.mainBgColor} text-white px-4 p-3 font-medium rounded-full w-full`}>
+                <button className={`mt-12 bg-neutral-900 dark:bg-white text-white dark:text-black px-4 p-3 font-medium rounded-full w-full`}>
                   GitHub
                 </button>
               </Link>
